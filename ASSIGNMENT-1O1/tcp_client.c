@@ -40,10 +40,10 @@ int main() {
         scanf("%s",&code);
         if(send(c,code,strlen(code),0)<0)
         puts("failed to verify: try again");
-        }
-         
+        //}
         // recv data from server
-        for(i=0;i<4;i++){         if(recv(c,syndicate_ryply,707,0)<0){
+        //for(i=0;i<4;i++){         
+        if(recv(c,syndicate_ryply,707,0)<0){
         printf("UNSECURE LINE : YOU ARE IN DANGER  ");
         printf("...");
         printf("CONNECTION TERMINATED");}
