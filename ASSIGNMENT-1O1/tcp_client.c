@@ -51,5 +51,6 @@ int main() {
         puts(syndicate_ryply);}
         
         }
+        close(c);
         return 0 ;
         }
