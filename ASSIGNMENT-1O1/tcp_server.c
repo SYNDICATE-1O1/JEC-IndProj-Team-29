@@ -40,12 +40,14 @@ int main()
         puts("SATELLITE HACKED : SECURE CONNECTION");
         
         //Listen
-        listen(syndicate , 7);
-        
+        if((listen(syndicate , 7))<0){
+        puts("ERROR : POWER CUTTOFF\n");
+        puts("NOT ABLE TO LISTEN\n");}
         //Accept the incoming connection
-        puts("SYNDICATE IS ONLINE");
+        else{
+        puts("SYNDICATE IS ONLINE");}
         c = sizeof(struct sockaddr_in);
-        while( (agent = accept(syndicate, (struct sockaddr )&client, (socklen_t)&c)) )
+        while( (agent = accept(syndicate, (struct sockaddr *)&client, (socklen_t*)&c)) )
         {
         if (agent<0)
         {
