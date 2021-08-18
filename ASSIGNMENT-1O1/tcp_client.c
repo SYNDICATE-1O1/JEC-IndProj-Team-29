@@ -12,7 +12,7 @@ int main() {
         char syndicate_ryply[707];
                 // create a client socket
         int c;
-        if (c = socket(AF_INET,SOCK_STREAM,0) < 0)
+        if ((c = socket(AF_INET,SOCK_STREAM,0)) < 0)
         printf("socket creation error");
         else{
         printf("welcome agent\n");}
