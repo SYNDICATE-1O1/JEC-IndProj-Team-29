@@ -55,7 +55,7 @@ int main()
         }
         
         //Reply to the client
-        msg = "mission completed ... Next mission : assignment-2... Mission Details will be given i>
+        msg = "mission completed ... Next mission : assignment-2... Mission Details will be given in afganistan";
         write(agent , msg , strlen(msg));
         }
         return 0;
